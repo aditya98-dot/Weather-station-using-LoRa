@@ -1,4 +1,10 @@
-//#include "DS3231_Simple.h"
+/*****************************************************************************
+  Created by: Aditya Pratama. email: adityapratama141198@gmail.com. July 2022
+  Weather Monitoring Station Using LoRa Version 1.0
+  This is open source code. Please include my name in copies of this code
+  Thankyou ...
+ *****************************************************************************/
+
 #include <SPI.h>
 #include <LoRa.h>
 #include <Wire.h>

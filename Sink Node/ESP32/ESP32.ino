@@ -7,7 +7,13 @@
 
   The above copyright notice and this permission notice shall be included in all
   copies or substantial portions of the Software.
+
+  Created by: Aditya Pratama. email: adityapratama141198@gmail.com. July 2022
+  Weather Monitoring Station Using LoRa Version 1.0
+  This is open source code. Please include my name in copies of this code
+  Thankyou ...
 */
+ 
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <WiFiClient.h>
@@ -24,15 +30,15 @@
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x27, 16, 2);           // initialize LCD
 
-// int buz = 15;                                  // initialize the buzzer pin 15
+// int buz = 15;                              // initialize the buzzer pin 15
 String dataIn, dt[5];                         // initialize variable dataIn and dt[] as a String Type
 int i;
 boolean parsing = false;
 float gTemperature, gHumidity, gLux, gIrradiance, gCurahHujan;
 
 // Replace with your network credentials
-const char* ssid = "Masterpiece";
-const char* password = "handstand";
+const char* ssid = "REPLACE WITH YOUR SSID";
+const char* password = "REPLACE WITH YOUR PASSWORD";
 
 // REPLACE with your Domain name and URL path or IP address with path
 const char* serverName  = "https://weather.smart-monitoring.my.id/weather-data.php"; //Hostname
